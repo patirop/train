@@ -6,15 +6,15 @@
             64
         ]
     },
+    "act_noise":	0.1,
     "actor_critic":	"mlp_actor_critic",
-    "clip_ratio":	0.2,
-    "env_fn":	"<function <lambda> at 0x102e5aea0>",
-    "epochs":	5,
+    "batch_size":	100,
+    "env_fn":	"<function <lambda> at 0x10c1ecea0>",
+    "epochs":	50,
     "exp_name":	"experiment_name",
     "gamma":	0.99,
-    "lam":	0.97,
     "logger":	{
-        "<spinup.utils.logx.EpochLogger object at 0x1030c97f0>":	{
+        "<spinup.utils.logx.EpochLogger object at 0x10c45b908>":	{
             "epoch_dict":	{},
             "exp_name":	"experiment_name",
             "first_row":	true,
@@ -33,12 +33,12 @@
         "output_dir":	"./output"
     },
     "max_ep_len":	1000,
-    "pi_lr":	0.0003,
-    "save_freq":	10,
+    "pi_lr":	0.001,
+    "polyak":	0.995,
+    "q_lr":	0.001,
+    "replay_size":	1000000,
+    "save_freq":	1,
     "seed":	0,
-    "steps_per_epoch":	5000,
-    "target_kl":	0.01,
-    "train_pi_iters":	80,
-    "train_v_iters":	80,
-    "vf_lr":	0.001
+    "start_steps":	10000,
+    "steps_per_epoch":	5000
 }
